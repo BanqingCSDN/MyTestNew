@@ -19,17 +19,17 @@ public class MediaService extends Service {
     private int i = 0;
     //歌曲路径
     private String[] musicPath = new String[]{
-            Environment.getExternalStorageDirectory() + "/Sounds/a1.mp3",
-            Environment.getExternalStorageDirectory() + "/Sounds/a2.mp3",
-            Environment.getExternalStorageDirectory() + "/Sounds/a3.mp3",
-            Environment.getExternalStorageDirectory() + "/Sounds/a3.mp3",
+             "/Sounds/a1.mp3",
+             "/Sounds/a2.mp3",
+             "/Sounds/a3.mp3",
+             "/Sounds/a3.mp3"
     };
     /*private String[] musicPath = new String[]{
      *//*"http://sc1.111ttt.cn/2018/1/03/13/396131232171.mp3",
             "http://sc1.111ttt.cn/2018/1/03/13/396131229550.mp3",
             "http://sc1.111ttt.cn/2018/1/03/13/396131228287.mp3",
             "http://sc1.111ttt.cn/2018/1/03/13/396131227447.mp3"*//*
-            Environment.getExternalStorageDirectory() + "/mnt/shared/Other/a1.mp3",
+            Environment.getExternalStorageDirectory() + "/mnt/shared/Other/a1.mp3"
     };*/
     //这里要是路径有问题，就加上getAbsolutePath()，像下面这样
     // Environment.getExternalStorageDirectory().getAbsolutePath() + "/Sounds/a1.mp3",
