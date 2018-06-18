@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
      * 初始化view123
      */
     private void initView() {
-
+if(true){
+}
     }
 }
