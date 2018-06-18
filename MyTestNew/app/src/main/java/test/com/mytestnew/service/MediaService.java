@@ -17,13 +17,14 @@ public class MediaService extends Service {
     private MyBinder mBinder = new MyBinder();
     //标记当前歌曲的序号
     private int i = 0;
-    //歌曲路径
+    //歌曲路径（根据自己的路径设置）
     private String[] musicPath = new String[]{
-             "/Sounds/a1.mp3",
-             "/Sounds/a2.mp3",
-             "/Sounds/a3.mp3",
-             "/Sounds/a3.mp3"
+             "/mnt/sheader/Other/a1.mp3",
+             "/mnt/sheader/Other/a2.mp3",
+             "/mnt/sheader/Other/a3.mp3",
+             "/mnt/sheader/Other/a4.mp3"
     };
+    //网路播放歌曲路径
     /*private String[] musicPath = new String[]{
      *//*"http://sc1.111ttt.cn/2018/1/03/13/396131232171.mp3",
             "http://sc1.111ttt.cn/2018/1/03/13/396131229550.mp3",
