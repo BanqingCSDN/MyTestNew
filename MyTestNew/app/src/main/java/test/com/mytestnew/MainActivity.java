@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import java.text.SimpleDateFormat;
 
 import test.com.mytestnew.service.MediaService;
@@ -113,6 +114,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     };
 
+    /**
+     * 初始化view
+     */
     private void iniView() {
         playButton = (Button) findViewById(R.id.play);
         pauseButton = (Button) findViewById(R.id.pause);
@@ -147,6 +151,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    /**
+     * 权限获取回调
+     *
+     * @param requestCode
+     * @param permissions
+     * @param grantResults
+     */
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
                                            @NonNull int[] grantResults) {
@@ -168,8 +179,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        //关闭播放器
         mMyBinder.closeMedia();
+        //解绑服务
         unbindService(mServiceConnection);
+        //移除runnable
         mHandler.removeCallbacks(mRunnable);
     }
 }

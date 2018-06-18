@@ -14,15 +14,15 @@ import java.io.IOException;
 public class MediaService extends Service {
 
     private static final String TAG = "MediaService";
-    private MyBinder mBinder = new MyBinder();
+    // private MyBinder mBinder = new MyBinder();
     //标记当前歌曲的序号
     private int i = 0;
     //歌曲路径（根据自己的路径设置）
     private String[] musicPath = new String[]{
-             "/mnt/sheader/Other/a1.mp3",
-             "/mnt/sheader/Other/a2.mp3",
-             "/mnt/sheader/Other/a3.mp3",
-             "/mnt/sheader/Other/a4.mp3"
+            "/mnt/sheader/Other/a1.mp3",
+            "/mnt/sheader/Other/a2.mp3",
+            "/mnt/sheader/Other/a3.mp3",
+            "/mnt/sheader/Other/a4.mp3"
     };
     //网路播放歌曲路径
     /*private String[] musicPath = new String[]{
@@ -39,7 +39,6 @@ public class MediaService extends Service {
     public MediaPlayer mMediaPlayer = new MediaPlayer();
 
 
-
     public class MyBinder extends Binder {
 
         /**
@@ -48,7 +47,7 @@ public class MediaService extends Service {
         public void playMusic() {
             if (!mMediaPlayer.isPlaying()) {
                 //如果还没开始播放，就开始
-              //  mMediaPlayer.start();
+                //  mMediaPlayer.start();
             }
         }
 
