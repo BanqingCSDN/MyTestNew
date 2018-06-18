@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * 初始化view
+     * 初始化view123
      */
     private void initView() {
 
